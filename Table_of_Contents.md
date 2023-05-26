@@ -3,7 +3,7 @@
 For those that do not want to do this the manual way here is a link to a [`install.sh`](install.sh). To use it you need to do. You have to be root user to use this, If you not the root you will not be able to use it.
 
 ```bash
-git clone https://github.com/Altoyda/
+git clone https://github.com/Altoyda/](https://github.com/Altoyda/Ubuntu-22.04-How-To.git
 ```
 
 ```bash
