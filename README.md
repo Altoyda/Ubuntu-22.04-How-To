@@ -6,6 +6,12 @@ For those that do not want to do this the manual way here is a link to a [`insta
 https://github.com/Altoyda/Ubuntu-22.04-How-To.git
 ```
 
+The line `USERNAME="lewis"` sets the username variable to "yourname". You may need to replace "lewis" with the actual username you want to set.
+
+```bash
+sudo nano install.sh
+```
+
 ```bash
 chmod +x install.sh
 ```
