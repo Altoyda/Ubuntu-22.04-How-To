@@ -51,17 +51,19 @@ Add the following lines to the end of both files:
 
 ```bash
 ##### From here you can install programs with apt or nala command and it will always work perfectly!####
-apt() { 
-command nala "$@"
+apt() {
+    command nala "$@"
 }
+
 sudo() {
-if [ "$1" = "apt" ]; then
- shift
- command sudo nala "$@"
-else
- command sudo "$@"
-fi
+    if [ "$1" = "apt" ] || [ "$1" = "apt-get" ]; then
+        shift
+        command sudo nala "$@"
+    else
+        command sudo "$@"
+    fi
 }
+
 ```
 
 These lines define aliases for the `apt` and `sudo` commands, allowing you to use either command interchangeably with the same functionality.
